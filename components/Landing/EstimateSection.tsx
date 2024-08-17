@@ -10,10 +10,9 @@ interface EstimateSectionProps {
 
 const EstimateSection: React.FC<EstimateSectionProps> = ({ title, description, additionalText, imageSrc }) => {
   return (
-    <section className="relative py-16 overflow-x-hidden">
+    <section className="relative py-16 overflow-hidden">
       {/* Background Elements */}
       <div aria-hidden="true" className="absolute inset-0 flex justify-center items-center">
-        <div className="bg-gradient-to-r from-[#22577A]/40 to-[#38A3A5]/40 blur-3xl w-[30rem] h-[15rem] rotate-[-60deg] dark:from-[#22577A]/40 dark:to-[#38A3A5]/40"></div>
       </div>
 
       {/* Content */}
