@@ -10,9 +10,10 @@ interface EstimateSectionProps {
 
 const EstimateSection: React.FC<EstimateSectionProps> = ({ title, description, additionalText, imageSrc }) => {
   return (
-    <section className="relative py-16 ">
+    <section className="relative py-16 overflow-x-hidden">
       {/* Background Elements */}
-      <div aria-hidden="true" className="flex absolute top-0 left-1/2 transform -translate-x-1/2">
+      <div aria-hidden="true" className="absolute inset-0 flex justify-center items-center">
+        <div className="bg-gradient-to-r from-[#22577A]/40 to-[#38A3A5]/40 blur-3xl w-[30rem] h-[15rem] rotate-[-60deg] dark:from-[#22577A]/40 dark:to-[#38A3A5]/40"></div>
       </div>
 
       {/* Content */}
@@ -34,16 +35,16 @@ const EstimateSection: React.FC<EstimateSectionProps> = ({ title, description, a
 
         {/* Image Section */}
         <div className="md:w-1/2 flex justify-center">
-        <div className="bg-gradient-to-r from-[#22577A]/40 to-[#38A3A5]/40 blur-3xl w-[30rem] h-[15rem] rotate-[-60deg] transform -translate-x-[15rem] dark:from-[#22577A]/40 dark:to-[#38A3A5]/40"></div>
-          <Image
-            src={imageSrc}
-            alt={title}
-            width={400}
-            height={300}
-            className="object-contain"
-          />
+          <div className="relative">
+            <Image
+              src={imageSrc}
+              alt={title}
+              width={400}
+              height={300}
+              className="object-contain"
+            />
+          </div>
         </div>
-
       </div>
     </section>
   );

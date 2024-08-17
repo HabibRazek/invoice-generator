@@ -2,9 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import ThemeSwitch from "../ThemeSwitch";
-import React from 'react'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +31,7 @@ const Navbar = () => {
     <header
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${navBackground}`}
     >
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6 w-full overflow-x-hidden">
         <Link href="/" className="text-lg font-semibold text-primary">
           Invoice <span className="bg-[#38a3a5] text-white font-bold px-2 py-1"> Maker</span>
         </Link>
@@ -98,4 +96,4 @@ const Navbar = () => {
   );
 }
 
-export default Navbar
+export default Navbar;

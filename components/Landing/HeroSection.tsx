@@ -3,7 +3,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <div className="relative bg-light-theme dark:bg-dark-theme">
+    <div className="relative bg-light-theme dark:bg-dark-theme overflow-x-hidden">
       <div aria-hidden="true" className="flex absolute -top-96 left-1/2 transform -translate-x-1/2">
         <div className="bg-gradient-to-r from-[#22577A]/40 to-[#38A3A5]/40 blur-3xl w-[30rem] h-[50rem] rotate-[-60deg] transform -translate-x-[15rem] dark:from-[#22577A]/40 dark:to-[#38A3A5]/40"></div>
         <div className="bg-gradient-to-tl from-[#57CC99]/40 via-[#80ED99]/40 to-[#C7F9CC]/40 blur-3xl w-[100rem] h-[60rem] rounded-full origin-top-left -rotate-12 -translate-x-[20rem] dark:from-[#57CC99]/60 dark:via-[#80ED99]/60 dark:to-[#C7F9CC]/60"></div>
@@ -29,7 +29,7 @@ const HeroSection = () => {
             </div>
 
             <div className="mt-8 flex justify-center">
-              <Link href='#'  className="inline-block px-6 py-3 text-lg font-semibold text-white bg-[#22577A]  shadow-lg hover:bg-[#38A3A5] dark:bg-[#57CC99] dark:hover:bg-[#80ED99] transition-colors">
+              <Link href='#' className="inline-block px-6 py-3 text-lg font-semibold text-white bg-[#22577A] shadow-lg hover:bg-[#38A3A5] dark:bg-[#57CC99] dark:hover:bg-[#80ED99] transition-colors">
                 Get Started
               </Link>
             </div>
