@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import ThemeSwitch from "../ThemeSwitch";
+import { useTranslations } from 'next-intl';
+import { Link } from "@/navigation";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,13 +28,15 @@ const Navbar = () => {
     };
   }, []);
 
+  const t = useTranslations('Navbar');
+
   return (
     <header
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${navBackground}`}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6 w-full overflow-x-hidden">
         <Link href="/" className="text-lg font-semibold text-primary">
-          Invoice <span className="bg-[#38a3a5] text-white font-bold px-2 py-1"> Maker</span>
+          {t('companyName')} <span className="bg-[#38a3a5] text-white font-bold px-2 py-1">{t('highlightedText')}</span>
         </Link>
 
         <div className="flex items-center md:hidden">
@@ -56,17 +59,17 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center space-x-4">
           <nav className="space-x-4">
-            <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
-              Home
+            <Link href="/home" className="text-sm font-medium hover:text-primary transition-colors">
+              {t('navLinks.Home')}
             </Link>
             <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors">
-              About
+              {t('navLinks.About')}
             </Link>
             <Link href="/services" className="text-sm font-medium hover:text-primary transition-colors">
-              Services
+              {t('navLinks.Services')}
             </Link>
             <Link href="/contact" className="text-sm font-medium hover:text-primary transition-colors">
-              Contact
+              {t('navLinks.Contact')}
             </Link>
           </nav>
           <ThemeSwitch />
@@ -78,19 +81,18 @@ const Navbar = () => {
       >
         <div className="px-4 py-2">
           <Link href="/" className="block py-2 text-sm font-medium hover:text-primary transition-colors">
-            Home
+            {t('navLinks.Home')}
           </Link>
           <Link href="/about" className="block py-2 text-sm font-medium hover:text-primary transition-colors">
-            About
+            {t('navLinks.About')}
           </Link>
           <Link href="/services" className="block py-2 text-sm font-medium hover:text-primary transition-colors">
-            Services
+            {t('navLinks.Services')}
           </Link>
           <Link href="/contact" className="block py-2 text-sm font-medium hover:text-primary transition-colors">
-            Contact
+            {t('navLinks.Contact')}
           </Link>
         </div>
-
       </nav>
     </header>
   );

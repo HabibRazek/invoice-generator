@@ -1,0 +1,39 @@
+{
+  "HeroSection": {
+    "title": "Optimieren Sie Ihre Rechnungsstellung mit maßgeschneiderten Lösungen",
+    "subtitle": "Ihre ultimative Lösung für das Rechnungsmanagement",
+    "description": "Verwalten Sie Ihre Rechnungen mühelos und erstellen Sie maßgeschneiderte Rechnungen, die auf Ihre Bedürfnisse zugeschnitten sind. Unser System bietet eine intuitive Benutzeroberfläche, um Ihren Rechnungsstellungsprozess zu optimieren und jedes Mal eine genaue Abrechnung zu gewährleisten.",
+    "getStartedButton": "Loslegen"
+  },
+  "EstimateSection": {
+    "title": "Ihr maßgeschneiderter Kostenvoranschlag",
+    "description": "Erhalten Sie einen detaillierten Kostenvoranschlag, der auf Ihre spezifischen Bedürfnisse zugeschnitten ist.",
+    "additionalText": "Zusätzliche Informationen oder Notizen können hier hinzugefügt werden.",
+    "imageSrc": "/pfad/zu/Ihrer/abildung.jpg"
+  },
+  "Footer": {
+    "logo": {
+      "companyName": "Rechnungssteller",
+      "highlightedText": "Steller"
+    },
+    "navigationLinks": {
+      "Home": "Startseite",
+      "About": "Über uns",
+      "Services": "Dienstleistungen",
+      "Contact": "Kontakt",
+      "PrivacyPolicy": "Datenschutzrichtlinie",
+      "TermsOfService": "Nutzungsbedingungen"
+    },
+    "bottomText": "© 2024 Rechnungssteller. Alle Rechte vorbehalten."
+  },
+  "Navbar": {
+    "companyName": "Rechnungssteller",
+    "highlightedText": "Steller",
+    "navLinks": {
+      "Home": "Startseite",
+      "About": "Über uns",
+      "Services": "Dienstleistungen",
+      "Contact": "Kontakt"
+    }
+  }
+}

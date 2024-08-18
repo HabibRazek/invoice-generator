@@ -1,0 +1,39 @@
+{
+  "HeroSection": {
+    "title": "Streamline Your Invoicing with Custom Solutions",
+    "subtitle": "Your Ultimate Invoice Management Solution",
+    "description": "Manage your invoices effortlessly and generate custom invoices tailored to your needs. Our system provides an intuitive interface to streamline your invoicing process and ensure accurate billing every time.",
+    "getStartedButton": "Get Started"
+  },
+  "EstimateSection": {
+    "title": "Your Custom Estimate",
+    "description": "Get a detailed estimate tailored to your specific needs.",
+    "additionalText": "Additional information or notes can be added here.",
+    "imageSrc": "/path/to/your/image.jpg"
+  },
+  "Footer": {
+    "logo": {
+      "companyName": "Invoice Maker",
+      "highlightedText": "Maker"
+    },
+    "navigationLinks": {
+      "Home": "Home",
+      "About": "About",
+      "Services": "Services",
+      "Contact": "Contact",
+      "PrivacyPolicy": "Privacy Policy",
+      "TermsOfService": "Terms of Service"
+    },
+    "bottomText": "© 2024 Invoice Maker. All rights reserved."
+  },
+  "Navbar": {
+    "companyName": "Invoice Maker",
+    "highlightedText": "Maker",
+    "navLinks": {
+      "Home": "Home",
+      "About": "About",
+      "Services": "Services",
+      "Contact": "Contact"
+    }
+  }
+}

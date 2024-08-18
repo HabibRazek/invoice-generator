@@ -1,14 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 interface EstimateSectionProps {
-  title: string;
-  description: string;
-  additionalText?: string;
   imageSrc: string;
 }
 
-const EstimateSection: React.FC<EstimateSectionProps> = ({ title, description, additionalText, imageSrc }) => {
+const EstimateSection: React.FC<EstimateSectionProps> = ({ imageSrc }) => {
+  const t = useTranslations('EstimateSection');
+
   return (
     <section className="relative py-16 overflow-hidden">
       {/* Background Elements */}
@@ -20,14 +20,14 @@ const EstimateSection: React.FC<EstimateSectionProps> = ({ title, description, a
         {/* Text Section */}
         <div className="md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-4xl font-bold text-[#22577A] dark:text-[#C7F9CC] mb-4">
-            {title}
+            {t('title')}
           </h2>
           <p className="text-lg text-[#38A3A5] dark:text-[#80ED99]">
-            {description}
+            {t('description')}
           </p>
-          {additionalText && (
+          {t('additionalText') && (
             <p className="mt-4 text-lg text-[#38A3A5] dark:text-[#80ED99]">
-              {additionalText}
+              {t('additionalText')}
             </p>
           )}
         </div>
@@ -37,7 +37,7 @@ const EstimateSection: React.FC<EstimateSectionProps> = ({ title, description, a
           <div className="relative">
             <Image
               src={imageSrc}
-              alt={title}
+              alt={t('title')}
               width={400}
               height={300}
               className="object-contain"
