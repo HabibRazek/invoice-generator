@@ -1,8 +1,9 @@
 import React from 'react';
-import Link from 'next/link';
 import ThemeSwitch from '../ThemeSwitch';
 import { MdGTranslate } from 'react-icons/md';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/navigation';
+import LocaleSwitcher from '../LocaleSwitcher';
 
 const Footer = () => {
   const t = useTranslations('Footer');
@@ -42,8 +43,8 @@ const Footer = () => {
 
           {/* Language Switch and Theme Switch */}
           <div className="w-full md:w-auto flex justify-center items-center space-x-4">
-            <MdGTranslate />
-            <ThemeSwitch />
+          <ThemeSwitch />
+          <LocaleSwitcher />
           </div>
         </div>
 

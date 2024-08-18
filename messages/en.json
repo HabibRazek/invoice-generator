@@ -27,7 +27,7 @@
     "bottomText": "© 2024 Invoice Maker. All rights reserved."
   },
   "Navbar": {
-    "companyName": "Invoice Maker",
+    "companyName": "Invoice",
     "highlightedText": "Maker",
     "navLinks": {
       "Home": "Home",
@@ -35,5 +35,14 @@
       "Services": "Services",
       "Contact": "Contact"
     }
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} other {Unknown}}"
+  },
+  "LocaleLayout": {
+    "title": "Invoice Maker",
+    "description": "Create invoices quickly and easily with our Invoice Maker.",
+    "keywords": "invoices, billing, finance, payments"
   }
 }

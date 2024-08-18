@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import ThemeSwitch from "../ThemeSwitch";
 import { useTranslations } from 'next-intl';
 import { Link } from "@/navigation";
+import LocaleSwitcher from "../LocaleSwitcher";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,6 +12,8 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    setNavBackground(!menuOpen ? "bg-white shadow-md dark:bg-[#001524] dark:shadow-md" : "bg-transparent");
+
   };
 
   const handleScroll = () => {
@@ -41,6 +44,7 @@ const Navbar = () => {
 
         <div className="flex items-center md:hidden">
           <ThemeSwitch />
+          <LocaleSwitcher />
           <button
             onClick={toggleMenu}
             className="relative h-5 w-5 flex flex-col justify-between items-center ml-4"
@@ -73,6 +77,7 @@ const Navbar = () => {
             </Link>
           </nav>
           <ThemeSwitch />
+          <LocaleSwitcher />
         </div>
       </div>
 

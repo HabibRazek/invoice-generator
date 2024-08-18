@@ -27,7 +27,7 @@
     "bottomText": "© 2024 Rechnungssteller. Alle Rechte vorbehalten."
   },
   "Navbar": {
-    "companyName": "Rechnungssteller",
+    "companyName": "Rechnungs",
     "highlightedText": "Steller",
     "navLinks": {
       "Home": "Startseite",
@@ -35,5 +35,14 @@
       "Services": "Dienstleistungen",
       "Contact": "Kontakt"
     }
+  },
+  "LocaleSwitcher": {
+    "label": "Sprache ändern",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} other {Unbekannt}}"
+  },
+  "LocaleLayout": {
+    "title": "Rechnungsersteller",
+    "description": "Erstellen Sie Rechnungen schnell und einfach mit unserem Rechnungsersteller.",
+    "keywords": "Rechnungen, Abrechnung, Finanzen, Zahlungen"
   }
 }
